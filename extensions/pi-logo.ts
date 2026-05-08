@@ -4,8 +4,8 @@
  * Replaces the default header with the pi.dev block logo.
  */
 
-import type { ExtensionAPI } from "@mariozechner/pi-coding-agent";
-import { VERSION } from "@mariozechner/pi-coding-agent";
+import type { ExtensionAPI } from "@earendil-works/pi-coding-agent";
+import { VERSION } from "@earendil-works/pi-coding-agent";
 
 function getPiLogo(theme: any): string[] {
 	const B = "████";

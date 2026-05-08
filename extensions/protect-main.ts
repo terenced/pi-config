@@ -1,7 +1,7 @@
 /**
  * Protect main: block agent bash commands that commit to or push to `main`.
  */
-import type { ExtensionAPI } from "@mariozechner/pi-coding-agent";
+import type { ExtensionAPI } from "@earendil-works/pi-coding-agent";
 
 const PROTECTED = ["main", "master"];
 

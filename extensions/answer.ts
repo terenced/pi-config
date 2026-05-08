@@ -21,8 +21,8 @@ import type {
   ExtensionAPI,
   ExtensionContext,
   ModelRegistry,
-} from "@mariozechner/pi-coding-agent";
-import { BorderedLoader } from "@mariozechner/pi-coding-agent";
+} from "@earendil-works/pi-coding-agent";
+import { BorderedLoader } from "@earendil-works/pi-coding-agent";
 import {
   type Component,
   Editor,
@@ -474,7 +474,6 @@ export default function (pi: ExtensionAPI) {
           theme,
           `Extracting questions using ${extractionModel.id}...`,
         );
-        console.log(`Extracting questions using ${extractionModel.id}...`);
         ctx.ui.notify(
           `Extracting questions using ${extractionModel.id}...`,
           "info",
@@ -486,7 +485,6 @@ export default function (pi: ExtensionAPI) {
           const auth =
             await ctx.modelRegistry.getApiKeyAndHeaders(extractionModel);
           if (!auth.ok) {
-            console.log("auth", auth);
             ctx.ui.notify(auth.error, "info");
             throw new Error(auth.error);
           }

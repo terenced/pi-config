@@ -12,8 +12,8 @@ import type {
   ExtensionAPI,
   ExtensionCommandContext,
   Theme,
-} from "@mariozechner/pi-coding-agent";
-import { DynamicBorder } from "@mariozechner/pi-coding-agent";
+} from "@earendil-works/pi-coding-agent";
+import { DynamicBorder } from "@earendil-works/pi-coding-agent";
 import {
   CancellableLoader,
   Container,
